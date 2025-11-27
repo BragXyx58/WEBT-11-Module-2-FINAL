@@ -1,0 +1,92 @@
+/* src/components/ProductControls/ProductControls.css */
+.product-controls-wrapper {
+    margin-bottom: 20px;
+}
+
+.product-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.pc-title {
+    font-size: 24px;
+    font-weight: 500; 
+    margin: 0 0 8px 0;
+}
+
+.pc-subtitle {
+    font-size: 14px;
+    color: #797878;
+}
+
+.pc-count {
+    margin-right: 8px;
+}
+
+.pc-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.price-toggle {
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    padding: 4px;
+    display: flex;
+}
+
+.pt-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.pt-btn.active {
+    background-color: white;
+    color: #43b02a;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sort-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.icon-sort {
+    font-size: 16px;
+    color: #777;
+}
+
+.view-switcher {
+    display: flex;
+    gap: 8px;
+    border-left: 1px solid #e5e5e5;
+    padding-left: 24px;
+}
+
+.view-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding: 0;
+}
+
+.view-btn.active {
+    color: #43b02a;
+}
