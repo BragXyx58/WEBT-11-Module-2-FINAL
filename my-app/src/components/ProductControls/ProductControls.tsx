@@ -1,16 +1,18 @@
-// src/components/ProductControls/ProductControls.tsx
 import React from 'react';
 import './ProductControls.css';
 
-const ProductControls: React.FC = () => {
+interface ProductControlsProps {
+    productCount: number;
+}
+
+const ProductControls: React.FC<ProductControlsProps> = ({ productCount }) => {
   return (
     <div className="product-controls-wrapper">
         <div className="container product-controls">
             <div className="pc-left">
                 <h1 className="pc-title">Чорна п'ятниця 2025</h1>
                 <div className="pc-subtitle">
-                    <span className="pc-count">10000 товарів</span>
-                    <span className="pc-page">сторінка 1</span>
+                    <span className="pc-count">{productCount} товарів</span>
                 </div>
             </div>
 
